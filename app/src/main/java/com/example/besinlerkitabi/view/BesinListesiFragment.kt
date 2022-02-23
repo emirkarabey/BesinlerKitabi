@@ -46,7 +46,7 @@ class BesinListesiFragment : Fragment() {
             besinYukleniyor.visibility = View.VISIBLE
             besinHataMesaji.visibility=View.GONE
             besinListRecycler.visibility=View.GONE
-            viewModel.refreshData()
+            viewModel.refreshFromInternet()
             swipeRefreshLayout.isRefreshing=false
         }
         observeLiveData()

@@ -29,7 +29,7 @@ class BesinRecyclerAdapter(val besinListesi:ArrayList<Besin>): RecyclerView.Adap
         holder.itemView.kalori.text = besinListesi.get(position).besinKalori
 
         holder.itemView.setOnClickListener {
-            val action = BesinListesiFragmentDirections.actionBesinListesiFragmentToBesinDetayiFragment()
+            val action = BesinListesiFragmentDirections.actionBesinListesiFragmentToBesinDetayiFragment(besinListesi.get(position).uuid)
             Navigation.findNavController(it).navigate(action)
         }
         holder.itemView.imageView.gorselIndir(besinListesi.get(position).besinGorsel, placeHolderYap(holder.itemView.context))
