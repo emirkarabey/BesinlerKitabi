@@ -7,6 +7,8 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.besinlerkitabi.R
 import com.example.besinlerkitabi.model.Besin
+import com.example.besinlerkitabi.util.gorselIndir
+import com.example.besinlerkitabi.util.placeHolderYap
 import com.example.besinlerkitabi.view.BesinListesiFragmentDirections
 import kotlinx.android.synthetic.main.besin_recycler_row.view.*
 
@@ -30,6 +32,7 @@ class BesinRecyclerAdapter(val besinListesi:ArrayList<Besin>): RecyclerView.Adap
             val action = BesinListesiFragmentDirections.actionBesinListesiFragmentToBesinDetayiFragment()
             Navigation.findNavController(it).navigate(action)
         }
+        holder.itemView.imageView.gorselIndir(besinListesi.get(position).besinGorsel, placeHolderYap(holder.itemView.context))
     }
 
     override fun getItemCount(): Int {
