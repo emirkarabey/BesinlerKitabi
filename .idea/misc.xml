@@ -4,8 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/emirk/AndroidStudioProjects/BesinlerKitabi/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
-        <entry key="..\:/Users/emirk/AndroidStudioProjects/BesinlerKitabi/app/src/main/res/layout/besin_recycler_row.xml" value="0.3654891304347826" />
-        <entry key="..\:/Users/emirk/AndroidStudioProjects/BesinlerKitabi/app/src/main/res/layout/fragment_besin_detayi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/emirk/AndroidStudioProjects/BesinlerKitabi/app/src/main/res/layout/besin_recycler_row.xml" value="0.1" />
+        <entry key="..\:/Users/emirk/AndroidStudioProjects/BesinlerKitabi/app/src/main/res/layout/fragment_besin_detayi.xml" value="0.1" />
         <entry key="..\:/Users/emirk/AndroidStudioProjects/BesinlerKitabi/app/src/main/res/layout/fragment_besin_listesi.xml" value="0.36666666666666664" />
       </map>
     </option>

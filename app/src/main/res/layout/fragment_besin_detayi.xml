@@ -2,6 +2,12 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="secilenBesin"
+            type="com.example.besinlerkitabi.model.Besin" />
+    </data>
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,14 +19,15 @@
         android:layout_height="wrap_content"
         android:minHeight="200dp"
         android:scaleType="fitCenter"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:downloadImage="@{secilenBesin.besinGorsel}">
     </ImageView>
     <TextView
         android:id="@+id/besinIsim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/besinImage"
-        android:text="besin ismi"
+        android:text="@{secilenBesin.besinIsim}"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
@@ -31,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/besinIsim"
-        android:text="besin kalori"
+        android:text="@{secilenBesin.besinKalori}"
         android:textSize="18sp"
         android:layout_centerHorizontal="true"
         android:layout_margin="7dp">
@@ -41,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/besinKalori"
-        android:text="besin karbonhidrat"
+        android:text="@{secilenBesin.besinKarbonhidrat}"
         android:textSize="18sp"
         android:layout_centerHorizontal="true"
         android:layout_margin="7dp">
@@ -51,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/besinKarbonhidrat"
-        android:text="besin kalori"
+        android:text="@{secilenBesin.besinProtein}"
         android:textSize="18sp"
         android:layout_centerHorizontal="true"
         android:layout_margin="7dp">
@@ -61,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/besinProtein"
-        android:text="besin kalori"
+        android:text="@{secilenBesin.besinYag}"
         android:textSize="18sp"
         android:layout_centerHorizontal="true"
         android:layout_margin="7dp">
